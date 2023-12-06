@@ -23,8 +23,14 @@ def get_pyg_html(df: pd.DataFrame) -> str:
 
 @st.cache_data
 def get_df() -> pd.DataFrame:
-    return pd.read_csv('AmesHousing.csv')
+    return pd.read_csv('cleaned_data.to_csv('data/geodata.csv')')
 
 df = get_df()
+
+st.map(df,
+    latitude='lat',
+    longitude='lng',
+    size=5,
+    color='price_sq2')
 
 components.html(get_pyg_html(df), width=1300, height=1000, scrolling=True)
