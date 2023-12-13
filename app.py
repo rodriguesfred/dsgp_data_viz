@@ -50,13 +50,6 @@ st.map(df,
     size=5,
     color='color')
 
-# fig, ax = plt.subplots()
-# cax = fig.add_axes([0.27, 0.8, 0.5, 0.05]) # Add an axes for the color bar
-
-# # Create a color bar
-# cb = plt.colorbar(cm.ScalarMappable(norm=norm, cmap=cmap), cax=cax)
-
-# st.pyplot(fig) # Display the figure with the color bar
 
 fig, ax = plt.subplots()
 cax = fig.add_axes([0.27, 0.8, 0.5, 0.05]) # Add an axes for the color bar
